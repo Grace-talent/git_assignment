@@ -65,5 +65,23 @@ f. What does git diff do?
 The git diff command is used to show the differences between changes in your Git repository. It compares the changes between various points in your project's history. 
 
 g. What is the main branch?
+The main branch (previously often called the "master" branch) in Git is the default branch of a repository. It is typically where the source code for the current production release resides. The main branch is considered the stable branch where the code is ready for deployment or release. When a repository is created, Git automatically creates this branch as the default branch, and it’s often used as the base branch for creating new feature branches, fixing bugs, or merging changes.
 
 h. Besides our initial commit if it is a new repository, should we directly push our changes directly into the main branch?
+In most cases, you should not directly push changes into the main branch, especially in a collaborative or production environment. Instead, you should follow a branching workflow:
+
+1. Create a New Branch:
+
+When you want to add a new feature or fix a bug, create a new branch off of the main branch.
+2. Make Changes and Commit:
+
+Develop and commit your changes on this new branch.
+3. Test Your Changes:
+
+Ensure that your changes are thoroughly tested and do not introduce new bugs.
+4. Open a Pull Request:
+
+Once your changes are ready, open a pull request (PR) to merge your branch into the main branch. This allows other team members to review your changes and provide feedback.
+5. Merge After Approval:
+
+After the pull request is reviewed and approved, merge it into the main branch. This ensures that the main branch remains stable and only includes code that has been reviewed and tested.
