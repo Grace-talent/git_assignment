@@ -1,4 +1,5 @@
 # Git Assignment - Grace-talent
+
 a. What is an issue?
 An issue is a way to track tasks, enhancements, bugs, or any other work that needs to be addressed within a project. Issues provide a forum for discussion among team members and can include descriptions, labels, milestones, and assignments to specific team members. 
 
